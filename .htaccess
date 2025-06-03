@@ -1,0 +1,14 @@
+Options -Indexes
+
+RewriteEngine On
+
+# Se não for arquivo ou diretório, redireciona para index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^ index.php [QSA,L]
+
+## bloqueia acesso a migration.php podendo ser executada apenas via CLI
+<Files "migration.php">
+    Require all denied
+</Files>

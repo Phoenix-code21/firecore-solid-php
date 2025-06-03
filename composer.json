@@ -1,0 +1,24 @@
+{
+    "authors": [
+        {
+            "name": "Gabriel Soares",
+            "email": "gabrielaparecido344@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Source\\": "Source/"
+        },
+        "files": [
+            "Source/Boot/Config.php",
+            "Source/Boot/Helper.php"
+        ]
+    },
+    "require": {
+        "bramus/router": "^1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    }
+}
