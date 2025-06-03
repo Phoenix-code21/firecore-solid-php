@@ -18,7 +18,7 @@ Framework PHP minimalista, baseado em Clean Architecture e princípios SOLID. De
 
 bash:
 
-git clone https://github.com/SeuUsuario/Phoenix-Framework.git
+git clone https://github.com/Phoenix-code21/firecore-solid-php.git
 
 cd FireCore
 
