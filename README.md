@@ -55,12 +55,16 @@ Execute seus testes com PHPUnit:
 
 ✅ Exemplo de teste:
 
+  
 public function testCreateBillet(): void
 {
-    $billet = new Billet(rand(1, 9999), "PAGO", 10.50);
-    $result = $this->repository->create($billet);
+    
+$billet = new Billet(rand(1, 9999), "PAGO", 10.50);
+    
+$result = $this->repository->create($billet);
+    
+$this->assertTrue($result, "Falha ao criar boleto");
 
-    $this->assertTrue($result, "Falha ao criar boleto");
 }
 
 🔒 Segurança
