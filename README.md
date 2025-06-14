@@ -16,24 +16,28 @@ Framework PHP minimalista, baseado em Clean Architecture e princípios SOLID. De
 
 ## 🚀 Instalação
 
-bash:
+```bash
 
 git clone https://github.com/Phoenix-code21/firecore-solid-php.git
 
 cd FireCore
 
 composer install
+```
 
 ⚙️ Configure o arquivo (Source/Boot/Config.php) com os dados do seu ambiente.
 
 🗺️ Rotas
 
 As rotas ficam definidas em Source/Routes/web.php.
+
 Exemplo:
 
+```bash
 $router->get("/", "HomeController@index");
 
 $router->post("/billet", "BilletController@store");
+```
 
 🗄️ Migrations
 
@@ -51,11 +55,14 @@ Execute as migrations facilmente com o terminal:
 
 Execute seus testes com PHPUnit:
 
+```bash
 ./vendor/bin/phpunit --colors=always Source/Tests
+```
 
 ✅ Exemplo de teste:
 
-  
+```bash
+
 public function testCreateBillet(): void
 {
     
@@ -66,6 +73,7 @@ $result = $this->repository->create($billet);
 $this->assertTrue($result, "Falha ao criar boleto");
 
 }
+```
 
 🔒 Segurança
 
